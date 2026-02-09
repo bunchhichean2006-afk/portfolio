@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Section */
+header {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.profile-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.profile-text p {
+    color: #ff4500;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.profile-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.profile-text .subtitle {
+    color: #888;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.hire-btn {
+    background-color: #ff4500;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.hire-btn:hover {
+    background-color: #ff5722;
+}
+
+.profile-image {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ff4500 0%, transparent 70%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff4500;
+    box-shadow: 0 0 30px rgba(255, 69, 0, 0.5);
+}
+
+.silhouette {
+    width: 200px;
+    height: 200px;
+    background-color: #000;
+    border-radius: 50%;
+    position: relative;
+}
+
+/* About Me Section */
+.about-section {
+    margin: 80px 0;
+}
+
+.section-title {
+    color: #ff4500;
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ff4500;
+    display: inline-block;
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-image .image-container {
+    width: 100%;
+    max-width: 350px;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    color: #aaa;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.download-cv-btn {
+    background-color: #ff4500;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.download-cv-btn:hover {
+    background-color: #ff5722;
+}
+
+/* Skills Section */
+.skills-section {
+    margin: 80px 0;
+}
+
+.skills-intro {
+    margin-bottom: 30px;
+}
+
+.skills-intro h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.skills-intro p {
+    color: #aaa;
+}
+
+.years-experience {
+    font-size: 72px;
+    color: #ff4500;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.years-text {
+    color: #ff4500;
+    font-size: 18px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.skill-item {
+    text-align: center;
+}
+
+.skill-percentage {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    color: #ff4500;
+    font-size: 16px;
+}
+
+/* Services Section */
+.services-section {
+    margin: 80px 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.service-item {
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    border-color: #ff4500;
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #ff4500;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.service-name {
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Contact Section */
+.contact-section {
+    margin: 80px 0;
+    text-align: center;
+}
+
+.contact-text {
+    color: #aaa;
+    margin: 20px 0 30px;
+}
+
+.chat-btn {
+    background-color: #ff4500;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.chat-btn:hover {
+    background-color: #ff5722;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #ff4500;
+    margin-top: 60px;
+}
+
+footer p {
+    color: #000;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-text h1 {
+        font-size: 36px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .years-experience {
+        font-size: 56px;
+    }
+
+    .skill-percentage {
+        font-size: 36px;
+    }
+    
+    .image-container {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .profile-pic {
+        width: 170px;
+        height: 170px;
+    }
+}
